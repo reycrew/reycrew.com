@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reycrew</title>
+    <link rel="icon" type="image/ico" href="./assets/icons/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white text-black">
+
+<!-- Floating Navigation Bar -->
+<nav id="navbar"
+     class="fixed top-6 w-11/12 left-1/2 transform -translate-x-1/2 p-4 md:p-8 lg:p-8 rounded-full bg-white shadow-md flex justify-between items-center z-40">
+    <div class="font-montserrat text-3xl">
+        <a href="#section1"><span class="hidden lg:inline font-semibold">Reycrew<span class="dot">.</span></span></a>
+        <a href="#section1"><span class="w-8 h-8 inline lg:hidden font-semibold">Reycrew<span
+                class="dot">.</span></span></a>
+    </div>
+    <!-- Links for large screens -->
+    <div class="hidden lg:flex space-x-4">
+        <a href="#section2">Our Work</a>
+        <a href="#section5">Testimonials</a>
+        <a href="#section6">Contact Us</a>
+    </div>
+    <!-- Hamburger Menu Button for smaller screens -->
+    <button id="hamburger-button" class="lg:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+        </svg>
+    </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu"
+     class="fixed top-0 right-0 h-full w-2/4 max-w-xs bg-white shadow-md transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden"
+     style="z-index:1">
+    <div class="flex flex-col text-center space-y-4 px-8 pt-28">
+        <a href="#section2" class="hamburger-button rounded-lg p-2">Our Work</a>
+        <a href="#section5" class="hamburger-button rounded-lg p-2">Testimonials</a>
+        <a href="#section6" class="hamburger-button rounded-lg p-2">Contact Us</a>
+    </div>
+</div>
+
+<div class=" h-24">
+</div>
+
+<!-- Sections -->
+<div class="h-auto snap-y snap-mandatory overflow-y-auto">
+    <section id="section1" class=" h-auto flex flex-col lg:flex-row">
+        <div class="lg:p-10 lg:w-1/2">
+            <div class="font-montserrat font-semibold text-5xl pl-8 md:text-6xl md:pl-8 lg:text-6xl">
+                R<span class="dot">.</span>
+            </div>
+            <div class="lg:ml-2 ">
+                <div class="flex items-center justify-center ">
+                    <div class="w-11/12 rounded-xl">
+                        <img alt="introduction" class="-mt-8" src="assets/img/cowork.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:w-1/2 lg:pr-20 lg:pt-28">
+            <div class="text-5xl lg:text-7xl font-bold text-left px-3">
+                We're a software <span class="bg-brush-stroke">development</span> & <span class="bg-brush-stroke">analytics</span>
+                studio
+            </div>
+            <div class="text-2xl font-bold px-3 pt-8">
+                <span>With over 20+ projects delivered, spanning over 6+ countries.</span>
+            </div>
+            <div class="py-6 pl-3">
+                <a href="#section5">
+                    <button class="font-bold rounded-full custom-bg-green pt-1.5 pb-3 px-6">
+                        Testimonials
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="section2" class="h-auto lg:h-screen flex flex-col lg:flex-row">
+        <div class="lg:w-1/2 flex items-center justify-center pt-16 lg:p-0 lg:flex-row ">
+            <div class=" w-11/12 p-6 lg:pt-0">
+                <div class="text-7xl font-bold text-left">
+                    <span class="bg-brush-stroke">Our Work</span>
+                </div>
+                <div class="text-lg lg:text-2xl font-bold pt-3 lg:pt-6">
+                    Be it startups or standalone shops,
+                    we've helped our clients create more inclusive digital ecosystems
+                    for employees, clients & audiences alike.
+                </div>
+            </div>
+        </div>
+        <div class="lg:w-1/2 lg:flex lg:flex-row ">
+            <div class="lg:flex flex items-center justify-center">
+                <div class="border-2 border-black rounded-xl w-5/6">
+                    <div class="custom-bg-green rounded-t-xl flex items-center justify-center px-1 py-4">
+                        <div class="bg-white rounded-xl w-10/12">
+                            <img alt="custom-software" src="assets/img/custom-software.png">
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <div class="w-11/12 p-2 text-2xl">
+                            Creating <span class="bg-brush-stroke">custom software</span> experiences
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:flex flex items-center justify-center pt-6 pb-6 lg:p-0">
+                <div class="border-2 border-black rounded-xl w-5/6">
+                    <div class="custom-bg-green rounded-t-xl flex items-center justify-center px-1 py-4">
+                        <div class="bg-white rounded-xl w-10/12">
+                            <img alt="tailor-made-campaign" src="assets/img/analytics.png">
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center pt-2">
+                        <div class="w-11/12 p-2 text-2xl">
+                            Providing insights and designing <span class="bg-brush-stroke">tailor-made</span> marketing
+                            campaigns
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section5" class="lg:h-screen h-auto flex flex-col lg:flex-row">
+        <div class="pt-24 lg:pt-36">
+            <div class="text-3xl lg:text-6xl font-bold text-center pb-2 lg:pb-12">
+                <span class="bg-brush-stroke">Feedback</span> from our clients
+            </div>
+            <div class="lg:flex">
+                <div class="custom-bg-green m-4 rounded-xl p-2">
+                    <div class="bg-white rounded-xl m-4 p-5">
+                        <div class="text-base">
+                            As an artist, I was thrilled with the website Reycrew created for me.
+                            They brought my vision to life, tailoring every detail to my preferences and welcoming my
+                            input throughout.
+                            The experience was seamless, and their deep understanding of my needs truly shone through in
+                            the final design.
+                        </div>
+                        <div class="text-xl font-bold pt-3">
+                            SY Studio
+                        </div>
+                        <div class="text-lg">
+                            Australia
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-bg-green m-4 rounded-xl p-2">
+                    <div class="bg-white rounded-xl m-4 p-5">
+                        <div class="text-base">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.
+                        </div>
+                        <div class="text-xl font-bold pt-3">
+                            Test Name
+                        </div>
+                        <div class="text-lg">
+                            Test Location
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-bg-green m-4 rounded-xl p-2">
+                    <div class="bg-white rounded-xl m-4 p-5">
+                        <div class="text-base">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.
+                        </div>
+                        <div class="text-xl font-bold pt-3">
+                            Test Name 2
+                        </div>
+                        <div class="text-lg">
+                            Test Location 2
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section6" class="lg:h-screen h-auto flex flex-col lg:flex-row lg:pt-12">
+        <div class="lg:w-1/2 pt-16">
+            <div class="m-4 rounded-xl">
+                <div class="text-6xl font-bold text-center pt-4">
+                    <span class="bg-brush-stroke">Contact Us</span>
+                </div>
+                <div class="text-xl font-bold text-justify px-8 pt-4">
+                    Schedule a free consultation or apply as a Tailwind expert
+                </div>
+                <div class="px-8 pt-6 pb-8 flex-row">
+                    <!--<a href="https://www.instagram.com/reycrew_india" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                    <a href="https://x.com/reycrew_india" target="_blank"><i class="fa-brands fa-x-twitter fa-2xl pl-2"></i></a>-->
+                    <a href="mailto:help.reycrew@gmail.com"><i class="fa-regular fa-envelope fa-2xl"></i></a>
+                </div>
+            </div>
+            <div class="border-2 border-black rounded-xl mx-4 px-5 pt-4 pb-5 text-xl font-bold">
+                Phone <span class="text-2xl pl-4"><a href="tel:+919372755317">+91 (937)-275-5317</a></span>
+            </div>
+            <div class="border-2 border-black rounded-xl mx-4 mt-2 px-5 pt-4 pb-5 text-xl font-bold">
+                e-mail<br><span class="text-2xl"><a
+                    href="mailto:help.reycrew@gmail.com">help.reycrew@gmail.com</a></span>
+            </div>
+        </div>
+        <div class="lg:w-1/2">
+            <img alt="contact" class="-mt-8" src="assets/img/contact.svg">
+        </div>
+    </section>
+</div>
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome 5 CDN for social icons -->
+<script src="https://kit.fontawesome.com/d0f2449b23.js" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* Add custom styles here */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Helvetica+World:wght@400;700&display=swap');
+
+body {
+    font-family: 'Helvetica World', sans-serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.dot {
+    color: #1C5C21; /*dark green*/
+}
+.dot2 {
+    color: #D22627; /*red*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbar{
+    box-shadow: 0 0px 14px 6px rgba(0, 0, 0, 0.1);
+}
+:root {
+    --custom-dark-green :   #1C5C21;
+    --custom-green      :   #9afd7f;
+    --custom-coral      :   #FF7F50;
+    --custom-pink       :   #f6d7ff;
+    --custom-red        :   #D22627;
+}
+.custom-bg-dark-green{
+    background-color: var(--custom-dark-green);
+}
+.custom-bg-green{
+    background-color: var(--custom-green);
+}
+.custom-bg-coral{
+    background-color: var(--custom-coral);
+}
+.custom-bg-pink{
+    background-color: var(--custom-pink);
+}
+.custom-bg-red{
+    background-color: var(--custom-red);
+}
+
+ /* Custom styling for the word with background image */
+.bg-text-img {
+    background-image: url('/assets/img/brush-stroke.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+/* Custom styling for the word with a background image */
+.bg-brush-stroke {
+    position: relative;
+    display: inline-block;
+}
+.bg-brush-stroke::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/img/brush-stroke.png'); /* Local image path */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure image is behind text */
+}
+
+/* Custom class for the background image */
+.bg-brush-stroke2::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background-image: url('assets/images/brush-stroke.png'); /* Path to your image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1; /* Ensure image is behind the text */
+}
+
+.hamburger-button, .navbar-button{
+    background-color: var(--custom-green);
+}
+.hamburger-button, .navbar-button:hover{
+    background-color:#8eeb75;
+}
